@@ -2,7 +2,7 @@ import Button from './button'
 
 export default function Form(props) {
   return (
-    <form className={`px-10 pt-6 pb-4  bg-white rounded `}>
+    <form className={`px-10  bg-white rounded `}>
       <div className="mb-4">
         <label className="block mb-2 text-sm font-bold text-gray-700" for="username">
           Usuario Nuevo
