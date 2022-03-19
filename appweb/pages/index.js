@@ -1,30 +1,24 @@
 
 import Button from '../components/button'
 import Form from '../components/form'
-import Container from '../components/container'
+import Container from '../components/container' 
 
 
 export default function Index() {
   return (
-    <Container>
-      <div className="h-screen bg-gradient-to-r from-cyan-500 to-blue-500 ">
-        <div className="flex w-full h-full justify-center items-center">
-          <div className="w-full xl:w-3/4 lg:w-11/12 flex justify-center">
-            <div className="w-full  bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg"></div>
-            <div className="w-full xl:w-1/2 lg:w-1/2 md:w-3/4 bg-white p-5 rounded-none lg:rounded-l-none lg:rounded-r-lg ">
-              <h3 className="pt-4 text-2xl text-center">Bienvenidos</h3>
-              <Form />
-              <hr className="bg-black my-5 mx-auto w-3/4"></hr>
-              <div className="mb-4 text-center px-10 ">
-                <Button msg="Sign up with google" className=" bg-red-600 hover:bg-red-600" />
-              </div>
-              <div className="mb-4 text-center px-10 ">
-                <Button msg="Sign In with google" className="bg-sky-700 hover:bg-sky-600" />
-              </div>
-            </div>
+    <div className="h-screen bg-gradient-to-r from-cyan-500 to-blue-500 font-sans">
+      <div className="h-full w-full flex items-center justify-center">
+        <div className="grid content-center rounded-md shadow-lg bg-white w-full h-full p-5 lg:w-1/4 lg:h-auto md:w-1/2 md:h-auto">
+          <Form />
+          <hr className="bg-black my-5 mx-auto w-3/4"></hr>
+          <div className="mb-4 text-center ">
+            <Button msg="Sign up with google" className=" bg-red-600 hover:bg-red-600" />
+          </div>
+          <div className="text-center ">
+            <Button msg="Sign In with google" className="bg-sky-700 hover:bg-sky-600" />
           </div>
         </div>
       </div>
-    </Container>
+    </div>
   )
 }

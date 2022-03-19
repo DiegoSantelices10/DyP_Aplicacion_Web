@@ -2,9 +2,10 @@ import Button from './button'
 
 export default function Form(props) {
   return (
-    <form className={`px-10  bg-white rounded `}>
+    <div>
+    <form>
       <div className="mb-4">
-        <label className="block mb-2 text-sm font-bold text-gray-700" for="username">
+        <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="username">
           Usuario Nuevo
         </label>
         <input
@@ -15,7 +16,7 @@ export default function Form(props) {
         />
       </div>
       <div className="mb-1">
-        <label className="block mb-2 text-sm font-bold text-gray-700" for="password">
+        <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="password">
           Contraseña Nueva
         </label>
         <input
@@ -28,5 +29,6 @@ export default function Form(props) {
       <Button msg="Sign In" className="bg-sky-700 hover:bg-sky-600" />
 
     </form>
+    </div>
   )
 }
