@@ -7,6 +7,8 @@ module.exports = {
   theme: {
     fontFamily: {
     'body':['Source Sans Pro', 'sans-serif'],
+    'roboto': ['Roboto', 'sans-serif'],
+    'oswald': ['Oswald']
     },
 
 

@@ -8,9 +8,9 @@ function Button(props) {
   return (
     <div>
       <button
-        className={`w-full px-4 py-2 font text-white font-body
+        className={`w-full px-4 py-2 text-white
                                     rounded-sm  focus:outline-none 
-                                    focus:shadow-outline text-sm uppercase
+                                    focus:shadow-outline text-sm 
                                     ${props.className}`}
         type="button"
         onClick={() => router.push('./admin/home')}>

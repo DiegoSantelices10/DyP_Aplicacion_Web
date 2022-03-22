@@ -3,9 +3,9 @@ import Button from './button'
 export default function Form(props) {
   return (
     <div>
-    <form>
+    <form className="font-roboto">
       <div className="mb-4">
-        <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="username">
+        <label className="block mb-2 text-sm  text-slate-400" htmlFor="username">
           Usuario Nuevo
         </label>
         <input
@@ -16,7 +16,7 @@ export default function Form(props) {
         />
       </div>
       <div className="mb-1">
-        <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="password">
+        <label className="block mb-2 text-sm  text-slate-400" htmlFor="password">
           Contraseña Nueva
         </label>
         <input
@@ -26,7 +26,7 @@ export default function Form(props) {
           placeholder="******************"
         />
       </div>
-      <Button msg="Sign In" className="bg-sky-700 hover:bg-sky-600" />
+      <Button msg="Iniciar sesion" className="bg-gradient-to-r from-cyan-500 to-indigo-500 hover:bg-cyan-600" />
 
     </form>
     </div>

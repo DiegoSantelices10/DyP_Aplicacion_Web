@@ -1,4 +1,4 @@
-import { React, Dropdown, Toggle } from 'react'
+import { React} from 'react'
 import { IconContext } from "react-icons";
 import { AiOutlinePoweroff, AiOutlineMenu } from "react-icons/ai";
 import Menudropdown from './menudropdown'
@@ -9,8 +9,8 @@ export default function navbar() {
     <nav className="bg-white border-b-2 border-b-slate-400 px-2 sm:px-4 py-2.5 ">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <div>
-          <Menudropdown />
-        </div>
+      <Menudropdown/>
+           </div>
 
         <Link href="../admin/home">
           <a className="flex items-center">
