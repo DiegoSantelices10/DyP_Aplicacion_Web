@@ -7,8 +7,10 @@ module.exports = {
   theme: {
     fontFamily: {
     'body':['Source Sans Pro', 'sans-serif'],
-    'roboto': ['Roboto', 'sans-serif'],
-    'oswald': ['Oswald']
+    'roboto': ['Roboto'],
+    'oswald': ['Oswald'],
+    'palette': ['Palette Mosaic'],
+
     },
 
 

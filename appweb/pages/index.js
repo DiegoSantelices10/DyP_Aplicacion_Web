@@ -3,6 +3,9 @@ import Button from '../components/button'
 import Form from '../components/form'
 import Image from 'next/image'
 import Container from '../components/container'
+
+
+
 export default function Index() {
   return (
   <Container className="w-full">
@@ -15,10 +18,10 @@ export default function Index() {
           <Form />
           <hr className="bg-black my-5 mx-auto w-3/4"></hr>
           <div className="mb-4 text-center ">
-            <Button msg="Iniciar sesion con Google" className="font-roboto border-2 border-slate-300 text-slate-400 hover:border-red-300 hover:text-red-400" />
+            <Button msg="Iniciar sesion con Google" className="border-2 border-slate-300 text-slate-600 hover:border-red-300 hover:text-red-400" />
           </div>
           <div className="text-center ">
-            <Button msg="Registrate con Google" className="font-roboto  bg-red-600 hover:bg-red-700" />
+            <Button msg="Registrate con Google" className="  bg-red-600 hover:bg-red-700" />
           </div>
         </div>
       </div>

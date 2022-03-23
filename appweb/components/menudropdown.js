@@ -7,7 +7,14 @@ export default function menudropdown() {
     return (
 
         <div className="max-w-lg mx-auto">
-          <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button" data-dropdown-toggle="dropdown">Menu<svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></button>
+          <button className="text-gray-700 border-indigo-800  focus:ring-4 
+          focus:ring-blue-300 font-medium rounded-3xl text-sm px-4 py-2 border
+          text-center inline-flex items-center" type="button" data-dropdown-toggle="dropdown">
+            Menu<svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" 
+            strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></button>
+
+            
           <div className="hidden bg-red text-base z-50  divide-y divide-gray-100 rounded shadow my-4" id="dropdown">
             
             <ul className="py-1" aria-labelledby="dropdown">
