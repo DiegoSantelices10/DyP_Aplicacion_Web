@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 
-
 function Button(props) {
 
   const router = new useRouter();
@@ -8,13 +7,13 @@ function Button(props) {
   return (
     <div>
       <button
-        className={`w-full px-4 py-2 text-white
-                                    rounded-sm  focus:outline-none 
+        className={`w-full px-4 py-2 h-12
+                                    rounded-md  focus:outline-none 
                                     focus:shadow-outline text-sm 
                                     ${props.className}`}
         type="button"
         onClick={() => router.push('./admin/home')}>
-        {props.msg}
+         {props.msg}
 
       </button>
     </div>

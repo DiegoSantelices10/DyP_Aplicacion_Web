@@ -9,7 +9,8 @@ export default function Form(props) {
           Usuario Nuevo
         </label>
         <input
-          className="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+          className="w-full h-12 px-3 py-2 text-sm leading-tight text-gray-700 border 
+          rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
           id="username"
           type="text"
           placeholder="Username"
@@ -20,13 +21,14 @@ export default function Form(props) {
           Contraseña Nueva
         </label>
         <input
-          className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+          className="w-full h-12 px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border 
+          rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
           id="password"
           type="password"
           placeholder="******************"
         />
       </div>
-      <Button msg="Iniciar sesion" className="bg-gradient-to-r from-cyan-500 to-indigo-500 hover:bg-cyan-600" />
+      <Button msg="Iniciar sesion" className="text-white mt-2  bg-gradient-to-r from-cyan-500 to-indigo-500 hover:bg-cyan-600" />
 
     </form>
     </div>
