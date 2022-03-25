@@ -9,8 +9,8 @@ export default function navbar() {
   return (
     <nav className="bg-white border-b border-b-gray-500 px-2 sm:px-4 py-2 font-roboto">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <div>
-      <Menudropdown/>
+        <div className="h-auto">
+            <Menudropdown/>
            </div>
         <Link href="../admin/home">
           <a className="flex items-center">

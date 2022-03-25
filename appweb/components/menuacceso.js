@@ -6,7 +6,7 @@ import { BiHome, BiCog, BiDollarCircle, BiShoppingBag, BiGift, BiCoffeeTogo } fr
 
 export default function menuacceso() {
   return (
-    <div className="flex justify-center  w-11/12 mx-auto  h-full py-6 text-gray-600">
+    <div className="flex justify-center  w-11/12 mx-auto  h-full py-6 text-gray-600 font-poppins">
       <Link href="../admin/home">
         <button className="bg-white rounded-sm  shadow border-solid border-gray-500 h-16 text-md w-full">
           <IconContext.Provider value={{ color: '#3b50b2', size: '25px' }}>

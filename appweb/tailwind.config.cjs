@@ -8,9 +8,7 @@ module.exports = {
     fontFamily: {
     'body':['Source Sans Pro', 'sans-serif'],
     'roboto': ['Roboto'],
-    'oswald': ['Oswald'],
-    'palette': ['Palette Mosaic'],
-
+    'poppins': ['Poppins', 'sans-serif']
     },
 
 

@@ -1,9 +1,13 @@
-import Button from './button'
 
-export default function Form(props) {
+import {useRouter} from 'next/router'
+
+
+export default function Form() {
+const router = new useRouter();
+
   return (
-    <div>
-    <form className="font-roboto">
+    <div >
+    <form className="font-poppins">
       <div className="mb-4">
         <label className="block mb-2 text-sm  text-slate-400" htmlFor="username">
           Usuario Nuevo
@@ -28,7 +32,14 @@ export default function Form(props) {
           placeholder="******************"
         />
       </div>
-      <Button msg="Iniciar sesion" className="text-white mt-2  bg-gradient-to-r from-cyan-500 to-indigo-500 hover:bg-cyan-600" />
+      <button className="mx-auto w-full py-2 h-12 mt-5
+                                    rounded-md  text-sm 
+                                    border text-white bg-gradient-to-r 
+                                    from-cyan-500 to-indigo-500 "
+                                    onClick={() => router.push('./admin/home')}
+                type="button">
+Iniciar sesion
+              </button>
 
     </form>
     </div>
