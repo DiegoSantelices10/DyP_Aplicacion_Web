@@ -8,9 +8,10 @@ export default function pedidos() {
   return (
     <Container >
       <Navbar />
-      <Liveinfo />
       <Menuacceso />
-      <p>Pedidos</p>
+      <div className="w-11/12 h-full bg-red-300">
+
+      </div>
     </Container>
   )
 }

@@ -7,7 +7,6 @@ export default function home() {
   return (
     <Container>
       <Navbar/>
-      <Liveinfo/>
       <Menuacceso />
       <div className="h-full">
         <div className="w-11/12 h-full flex  mx-auto gap-4 text-center">

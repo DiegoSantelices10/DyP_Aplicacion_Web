@@ -7,8 +7,8 @@ export default function menudropdown() {
     return (
 
         <div className="max-w-lg mx-auto">
-          <button className="text-gray-700 border-indigo-800  focus:ring-4 
-          focus:ring-blue-300 font-medium rounded-3xl text-sm px-4 py-2 border
+          <button className="text-gray-700 border-gray-300  focus:ring-4 
+          focus:ring-blue-300 font-medium rounded-3xl text-sm px-4 py-2 border-2
           text-center inline-flex items-center" type="button" data-dropdown-toggle="dropdown">
             Menu<svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" 
             xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" 
