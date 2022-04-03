@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../components/navbar'
 import Container from '../../components/container'
 import Menuacceso from '../../components/menuacceso';
-import Liveinfo from '../../components/liveinfo'
+
 export default function home() {
   return (
     <Container>

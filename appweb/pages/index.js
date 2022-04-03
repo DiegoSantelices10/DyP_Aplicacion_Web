@@ -21,6 +21,7 @@ export default function Index() {
             </div>
             <Form />
             <hr className="bg-black my-5 mx-auto w-3/4"></hr>
+            
             <div className="mb-4 text-center ">
               <button className="flex items-center w-full px-4 py-2 h-12
                                     rounded-md  focus:outline-none 

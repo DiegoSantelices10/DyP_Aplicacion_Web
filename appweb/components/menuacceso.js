@@ -9,12 +9,12 @@ export default function menuacceso() {
     <div className="flex justify-center w-11/12 mx-auto  h-auto py-5 gap-4">
 
       <Link href="../admin/home">
-        <button className="bg-white rounded-full  shadow-md border-2 border-gray-300 h-16  w-full">
+        <button className="bg-white rounded-full shadow-md   h-auto w-full">
           <div className="mt-1">
-            <IconContext.Provider value={{ color: '#075985', size: '25px' }}>
+            <IconContext.Provider value={{ color: '#075985', size: '35px' }}>
               <BiHome className="mx-auto" />
             </IconContext.Provider>
-            <p className="text-lg font-poppins font-bold text-slate-600">Home</p>
+            <p className="text-lg font-poppins font-semibold text-zinc-800">Home</p>
           </div>
         </button>
       </Link>
@@ -23,56 +23,47 @@ export default function menuacceso() {
 
 
       <Link href="../productos/productos">
-        <button className="bg-white rounded-full  shadow-md border-2 border-gray-300 h-16  w-full">
+        <button className="bg-white rounded-full  shadow-md  h-auto w-full">
           <div className="mt-1">
-            <IconContext.Provider value={{ color: '#075985', size: '25px' }}>
+            <IconContext.Provider value={{ color: '#075985', size: '35px' }}>
               <BiCoffeeTogo className="mx-auto" />
             </IconContext.Provider>
-            <p className="text-lg font-poppins font-bold text-slate-600">Productos</p>
+            <p className="text-lg font-poppins font-semibold text-zinc-800">Productos</p>
           </div>
         </button>
       </Link>
 
-      <Link href="../pedidos/pedidos">
-        <button className="bg-white rounded-full  shadow-md border-2 border-gray-300 h-16  w-full">
-          <div className="mt-1">
-            <IconContext.Provider value={{ color: '#075985', size: '25px' }}>
-              <BiShoppingBag className="mx-auto " />
-            </IconContext.Provider>
-            <p className="text-lg font-poppins font-bold text-slate-600">Pedidos</p>
-          </div>
-        </button>
-      </Link>
+      
 
       <Link href="../ventas/ventas">
-        <button className="bg-white rounded-full  shadow-md border-2 border-gray-300 h-16  w-full">
+        <button className="bg-white rounded-full  shadow-md  h-auto  w-full">
           <div className="mt-1" >
-            <IconContext.Provider value={{ color: '#075985', size: '25px' }}>
+            <IconContext.Provider value={{ color: '#075985', size: '35px' }}>
               <BiDollarCircle className="mx-auto" />
             </IconContext.Provider>
-            <p className="text-lg font-poppins font-bold text-slate-600">Ventas</p>
+            <p className="text-lg font-poppins font-semibold text-zinc-800">Ventas</p>
           </div>
         </button>
       </Link>
 
       <Link href="../promociones/promociones">
-        <button className="bg-white rounded-full  shadow-md border-2 border-gray-300 h-16  w-full">
+        <button className="bg-white rounded-full  shadow-md   h-auto  w-full">
           <div className="mt-1" >
-            <IconContext.Provider value={{ color: '#075985', size: '25px' }}>
+            <IconContext.Provider value={{ color: '#075985', size: '35px' }}>
               <BiGift className="mx-auto" />
             </IconContext.Provider>
-            <p className="text-lg font-poppins font-bold text-slate-600">Promociones</p>
+            <p className="text-lg font-poppins font-semibold text-zinc-800">Promociones</p>
           </div>
         </button>
       </Link>
 
       <Link href="../ajustes/ajustes">
-        <button className="bg-white rounded-full  shadow-md border-2 border-gray-300 h-16  w-full ">
+        <button className="bg-white rounded-full  shadow-md  h-auto  w-full ">
           <div className="mt-1">
-            <IconContext.Provider value={{ color: '#075985', size: '25px' }}>
+            <IconContext.Provider value={{ color: '#075985', size: '35px' }}>
               <BiCog className="mx-auto" />
             </IconContext.Provider>
-            <p className="text-lg font-poppins font-bold text-slate-600">Ajustes</p>
+            <p className="text-lg font-poppins font-semibold text-zinc-800">Ajustes</p>
           </div>
         </button>
       </Link>

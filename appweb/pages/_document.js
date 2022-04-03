@@ -14,6 +14,8 @@ class MyDocument extends Document {
                 <body>
                     <Main />
                     <NextScript />
+                    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+
                 </body>
             </Html>
         )
