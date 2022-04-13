@@ -1,12 +1,9 @@
 
 import Form from '../components/form'
 import Image from 'next/image'
-import Container from '../components/container'
-
 
 export default function Index() {
   return (
-    <Container>
       <div className="h-screen bg-gradient-to-r from-cyan-500 to-indigo-500 ">
         <div className="h-full w-4/5 flex items-center justify-between mx-auto">
           <div className="text-white">
@@ -40,6 +37,5 @@ export default function Index() {
 
         </div>
       </div >
-    </Container >
   )
 }

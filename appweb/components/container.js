@@ -1,18 +1,14 @@
 import Head from "next/head";
+import Navbar from './navbar'
 
 
-
-const Container = (props) => (
-  <div className="relative bg-slate-50 h-screen  mx-auto ">
+const Container = ({ children }) => (
+  <div className="h-screen">
     <Head>
       <title>D&amp;P</title>
     </Head>
-
-
-    <body >
-      <div className="font-poppins h-full">{props.children}</div>
-      <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
-    </body>
+      <Navbar />
+      <main className="h-screen fixed bg-slate-50 font-poppins w-full">{children}</main>
   </div>
 );
 

@@ -3,10 +3,9 @@ import Container from '../../components/container'
 import Navbar from '../../components/navbar'
 import Menuacceso from '../../components/menuacceso'
 
-export default function ventas() {
+export default function Ventas() {
   return (
-    <Container >
-      <Navbar />
+    < >
       <Menuacceso />
       <div className="h-screen fixed w-full">
 
@@ -157,6 +156,6 @@ export default function ventas() {
       </div>
 
 
-    </Container>
+    </>
   )
 }

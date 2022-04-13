@@ -6,16 +6,12 @@ function Button(props) {
 
   return (
     <div>
-      <button
-        className={`w-full px-4 py-2 h-12
-                                    rounded-md  focus:outline-none 
-                                    focus:shadow-outline text-sm 
-                                    ${props.className}`}
-        type="button"
-        onClick={() => router.push('./admin/home')}>
-         {props.msg}
-
+      <button className={`mx-auto w-60 py-2 h-12  rounded-2xl  text-sm 
+                                        border ${props.className}`}
+        type="button">
+        {props.mesage}
       </button>
+
     </div>
   )
 }

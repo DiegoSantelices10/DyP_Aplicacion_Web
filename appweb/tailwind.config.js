@@ -11,10 +11,10 @@ module.exports = {
     'poppins': ['Poppins', 'sans-serif']
     },
 
-
-
-  
-    extend: {},
+    extends: {},
   },
-  plugins: [],
+
+
+  plugins: [
+  ],
 }
