@@ -14,7 +14,7 @@ export default function Index() {
           <div className="grid content-center rounded-md shadow-lg bg-white w-full 
           h-full p-8 lg:w-5/12 lg:h-auto md:w-1/2 md:h-auto">
             <div className="w-auto mx-auto py-3">
-              <h1 className="font-bold"> ¡Bienvenido ingresa a tu cuenta!</h1>
+              <h1 className="font-bold"> ¡Bienvenido, ingresá a tu cuenta!</h1>
             </div>
             <Form />
             <hr className="bg-black my-5 mx-auto w-3/4"></hr>
