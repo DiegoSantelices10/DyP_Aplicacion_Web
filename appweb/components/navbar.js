@@ -4,6 +4,7 @@ import { AiOutlinePoweroff, AiOutlineMenu } from "react-icons/ai";
 import Mydropdown from './mydropdown'
 import Link from 'next/link'
 import Image from 'next/image'
+import { signOut } from 'next-auth/react';
 
 export default function navbar() {
   return (
@@ -24,7 +25,9 @@ export default function navbar() {
         <div className="hidden md:block md:w-auto pl-14 my-auto" id="mobile-menu">
           <IconContext.Provider value={{ className: "global-class-name", size: "26px", color: '#3b50b2' }}>
             <div>
-              <AiOutlinePoweroff />
+              <a onClick={() => signOut()}>
+              <AiOutlinePoweroff  />
+              </a>            
             </div>
           </IconContext.Provider>
         </div>

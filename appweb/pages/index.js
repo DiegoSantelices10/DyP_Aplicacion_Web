@@ -1,10 +1,16 @@
-
-import Form from '../components/form'
+import Head from 'next/head';
+import { signIn,  useSession } from 'next-auth/react';
 import Image from 'next/image'
+import Form from '../components/form'
 
-export default function Index() {
+export default function Home() {
+  const { data: session } = useSession();
+  if (session) {
+    return <p>Loading...</p>;
+  }
+
   return (
-      <div className="h-screen bg-gradient-to-r from-cyan-500 to-indigo-500 ">
+    <div className="h-screen bg-gradient-to-r from-cyan-500 to-indigo-500 ">
         <div className="h-full w-4/5 flex items-center justify-between mx-auto">
           <div className="text-white">
             <Image src="/images/liebreblack.png" width={95} height={80} />
@@ -20,7 +26,7 @@ export default function Index() {
             <hr className="bg-black my-5 mx-auto w-3/4"></hr>
             
             <div className="mb-4 text-center ">
-              <button className="flex items-center w-full px-4 py-2 h-12
+              <button onClick={() => signIn()} className="flex items-center w-full px-4 py-2 h-12
                                     rounded-md  focus:outline-none 
                                     focus:shadow-outline text-sm 
                                     border text-slate-600 
@@ -31,11 +37,7 @@ export default function Index() {
               </button>
             </div>
           </div>
-
-
-
-
         </div>
       </div >
-  )
+  );
 }
