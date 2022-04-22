@@ -4,7 +4,8 @@ import { AiOutlinePoweroff, AiOutlineMenu } from "react-icons/ai";
 import Mydropdown from './mydropdown'
 import Link from 'next/link'
 import Image from 'next/image'
-import { signOut } from 'next-auth/react';
+import { signOut, getSession } from 'next-auth/react';
+
 
 export default function navbar() {
   return (
@@ -13,7 +14,7 @@ export default function navbar() {
         <div className="my-auto">
             <Mydropdown/>
         </div>
-        
+    
         <div className="my-auto">
         <Link href="/admin/home">
           <a className="flex items-center">
@@ -34,3 +35,4 @@ export default function navbar() {
     </nav>
   )
 }
+
