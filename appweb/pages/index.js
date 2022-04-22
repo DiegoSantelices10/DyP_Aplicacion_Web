@@ -2,7 +2,10 @@ import React from 'react'
 import Menuacceso from '../components/menuacceso';
 import { getSession } from 'next-auth/react'
 
-export default function Home() {
+export default function Home({session}) {
+
+
+
   return (
     
     <div className="h-full">
@@ -19,12 +22,10 @@ export default function Home() {
   )
 }
 
-
 export const getServerSideProps = async (context) => {
   const session = await getSession(context);
 
   console.log(session);
-  console.log("hola servidor session")
 
   if (!session) {
     return {

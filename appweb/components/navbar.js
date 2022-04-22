@@ -1,20 +1,18 @@
-import { React} from 'react'
+import { React, useEffect} from 'react'
 import { IconContext } from "react-icons";
 import { AiOutlinePoweroff, AiOutlineMenu } from "react-icons/ai";
 import Mydropdown from './mydropdown'
 import Link from 'next/link'
 import Image from 'next/image'
 import { signOut, getSession } from 'next-auth/react';
+import { useRouter } from 'next/router'
 
-
-export default function navbar() {
+export default function navbar() {  
   return (
     <nav className="flex justify-between bg-white border-b border-b-gray-500 px-2 sm:px-4 h-14 font-roboto ">
-        
         <div className="my-auto">
             <Mydropdown/>
         </div>
-    
         <div className="my-auto">
         <Link href="/admin/home">
           <a className="flex items-center">
