@@ -1,11 +1,9 @@
 import Button from '../components/button'
-import LayoutWelcome from '../components/layoutWelcome'
 import Form from '../components/form'
-import Container from '../components/container'
+
 
 export default function SignUp() {
     return (
-        <Container>
             <div className="h-screen bg-gradient-to-r from-cyan-500 to-blue-500 ">
                 <div className="flex w-full h-full justify-center items-center">
                     <div className="w-full h-full sm:h-3/4  xl:w-3/4 lg:w-11/12 md:w-11/12  flex justify-center">
@@ -17,6 +15,5 @@ export default function SignUp() {
                     </div>
                 </div>
             </div>
-        </Container>
     )
 }
