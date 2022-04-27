@@ -11,7 +11,6 @@ export default function SignUp() {
                             <h3 className="pt-4 text-2xl text-center">Ingresa tus datos</h3>
                             <Form />
                         </div>
-                        <div className="w-full  bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg"></div>
                     </div>
                 </div>
             </div>
