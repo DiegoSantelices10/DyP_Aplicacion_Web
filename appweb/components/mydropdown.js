@@ -1,6 +1,5 @@
 import { Menu, Transition } from '@headlessui/react'
 import { Fragment, useEffect, useRef, useState } from 'react'
-import { MenuIcon } from '@heroicons/react/solid'
 
 export default function Mydropdown() {
   return (
@@ -11,7 +10,7 @@ export default function Mydropdown() {
           text-gray-400  rounded-full  hover:bg-gray-300 hover:text-white focus:outline-none focus-visible:ring-2 
           focus-visible:ring-white focus-visible:ring-opacity-75">
            Men&uacute;
-           <MenuIcon className="h-4 w-4 my-auto"/>
+         
           </Menu.Button>
   
 

@@ -1,18 +1,23 @@
 import '../styles/globals.css'
-import Container from '../components/container'
+import Layout2 from './layouts/Layout2'
+import Layout1 from './layouts/Layout1'
 import { SessionProvider } from "next-auth/react"
 
 
+const layouts = {
+  L2: Layout2,
+  L1: Layout1,
+};
+
 function MyApp({ Component, pageProps: {session, ...pageProps} }) {
- 
+  const Layout = layouts[Component.layout] || ((children) => <>{children}</>);
   
   return (
-    <Container>
+    <Layout>
       <SessionProvider session={session}>
-        
       <Component {...pageProps} />
       </SessionProvider>
-    </Container>
+    </Layout>
   )
 
 }
