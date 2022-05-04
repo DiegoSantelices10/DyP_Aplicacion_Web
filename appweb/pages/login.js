@@ -5,7 +5,6 @@ import Form from '../components/form'
 export default function Login() {
 
 
-
   return (
     <div className="h-screen bg-gradient-to-r from-cyan-500 to-indigo-500 ">
       <div className="h-full w-4/5 flex items-center justify-between mx-auto">
@@ -26,7 +25,7 @@ export default function Login() {
                     before:mt-0.5 after:flex-1 after:border-t 
                     after:border-gray-300 after:mt-0.5"
           >
-            <p class="text-center text-xs text-slate-400 mx-4 mb-0">O Registrate con</p>
+            <p className="text-center text-xs text-slate-400 mx-4 mb-0">O Registrate con</p>
           </div>
 
           <div className="text-center mx-auto ">
