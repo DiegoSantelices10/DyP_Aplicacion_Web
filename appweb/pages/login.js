@@ -23,7 +23,7 @@ export default function Login() {
                     before:mt-0.5 after:flex-1 after:border-t 
                     after:border-gray-300 after:mt-0.5"
           >
-            <p class="text-center text-xs text-slate-400 mx-4 mb-0">O Registrate con</p>
+            <p className="text-center text-xs text-slate-400 mx-4 mb-0">O Registrate con</p>
           </div>
 
           <div className="text-center mx-auto ">
