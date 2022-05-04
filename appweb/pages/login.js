@@ -4,6 +4,7 @@ import Form from '../components/form'
 
 export default function Login() {
 
+
   return (
     <div className="h-screen bg-gradient-to-r from-cyan-500 to-indigo-500 ">
       <div className="h-full w-4/5 flex items-center justify-between mx-auto">
