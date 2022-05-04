@@ -4,6 +4,19 @@ import Form from '../components/form'
 
 export default function Login() {
 
+
+return (
+  <div className="h-screen bg-gradient-to-r from-cyan-500 to-indigo-500 ">
+    <div className="h-full w-4/5 flex items-center justify-between mx-auto">
+      <div className="text-white">
+        <Image src="/images/liebreblack.png" width={95} height={80} />
+        <h1 className=" text-3xl font-bold">¿Qué esperás?</h1>
+        <p className=" text-md font-medium w-2/3">Registrate en simples pasos y empezá a hacer crecer tu comercio junto a nosotros.</p>
+      </div>
+      <div className="grid content-center rounded-md shadow-lg bg-white w-full 
+          h-full p-8 lg:w-5/12 lg:h-auto md:w-1/2 md:h-auto">
+        <div className="w-auto mx-auto py-3">
+          <h1 className="font-bold"> ¡Bienvenido, ingresá a tu cuent
   return (
     <div className="h-screen bg-gradient-to-r from-cyan-500 to-indigo-500 ">
       <div className="h-full w-4/5 flex items-center justify-between mx-auto">
@@ -11,6 +24,7 @@ export default function Login() {
           <Image src="/images/liebreblack.png" width={95} height={80} />
           <h1 className=" text-3xl font-bold">¡Registra tu negocio!</h1>
           <p className=" text-md font-medium w-2/3">Registrate en simples pasos y empieza a hacer crecer tu negocio junto a nosotros.</p>
+
         </div>
         <div className="grid content-center rounded-md shadow-lg bg-white w-full 
           h-full p-8 lg:w-5/12 lg:h-auto md:w-1/2 md:h-auto">
@@ -46,7 +60,7 @@ export const getServerSideProps = async (context) => {
   if (session) {
     return {
       redirect: {
-        destination: "/",
+        destination: "/signUp",
         permanent: false,
       },
     };
