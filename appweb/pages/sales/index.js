@@ -1,12 +1,10 @@
 import React from 'react'
-import Container from '../../components/container'
-import Navbar from '../../components/navbar'
-import Menuacceso from '../../components/menuacceso'
+import AccessMenu from '../../components/accessmenu'
 
-export default function Ventas() {
+export default function Sales() {
   return (
     < >
-      <Menuacceso />
+      <AccessMenu />
       <div className="h-screen fixed w-full">
 
         <div className="w-11/12 h-auto text-center py-5 mx-auto">
@@ -159,3 +157,4 @@ export default function Ventas() {
     </>
   )
 }
+Sales.layout = "L2";

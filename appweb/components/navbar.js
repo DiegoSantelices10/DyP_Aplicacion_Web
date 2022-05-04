@@ -1,11 +1,8 @@
 import { React, useEffect} from 'react'
-import { IconContext } from "react-icons";
-import { AiOutlinePoweroff, AiOutlineMenu } from "react-icons/ai";
 import Mydropdown from './mydropdown'
 import Link from 'next/link'
 import Image from 'next/image'
 import { signOut, getSession } from 'next-auth/react';
-import { useRouter } from 'next/router'
 
 export default function navbar() {  
   return (
@@ -14,7 +11,7 @@ export default function navbar() {
             <Mydropdown/>
         </div>
         <div className="my-auto">
-        <Link href="/admin/home">
+        <Link href="/">
           <a className="flex items-center">
           <Image src="/images/liebreblack.png" width={50} height={40}/>
           </a>
@@ -22,13 +19,11 @@ export default function navbar() {
         </div>
 
         <div className="hidden md:block md:w-auto pl-14 my-auto" id="mobile-menu">
-          <IconContext.Provider value={{ className: "global-class-name", size: "26px", color: '#3b50b2' }}>
             <div>
               <a onClick={() => signOut()}>
-              <AiOutlinePoweroff  />
+cerrar sesion
               </a>            
             </div>
-          </IconContext.Provider>
         </div>
     </nav>
   )

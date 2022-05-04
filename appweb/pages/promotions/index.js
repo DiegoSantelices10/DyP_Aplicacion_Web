@@ -1,16 +1,16 @@
 import React from 'react'
-import Menuacceso from '../../components/menuacceso'
+import AccessMenu from '../../components/accessmenu'
 import Button from '../../components/button'
 import { useFormik} from 'formik'
 
-export default function Promociones() {
+export default function Promotions() {
 
 const { handleSubmit, handleChange, values} = useFormik({
   initialValues: {
-    promo: "",
-    descripcion: "",
-    categoria: "",
-    precio: "",
+    promotion: "",
+    description: "",
+    category: "",
+    price: "",
   },
 onSubmit: async function (values){
 
@@ -22,7 +22,7 @@ console.log(values);
   return (
     < >
 
-      <Menuacceso/>
+      <AccessMenu/>
       <div className="h-screen fixed w-full">
         <div className="w-11/12 h-auto text-center flex justify-center py-10 mx-auto">
         <div className="w-2/6 h-full grid gap-4 grid-cols-1">
@@ -50,7 +50,7 @@ console.log(values);
                       id="promo"
                       type="text"
                       onChange={handleChange}
-                      value={values.promo}
+                      value={values.promotion}
                       className="w-full h-12 px-3 py-2 text-sm leading-tight text-gray-700 border 
                               rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
                     />
@@ -63,7 +63,7 @@ console.log(values);
                       id="descripcion"
                       type="text"
                       onChange={handleChange}
-                      value={values.descripcion}
+                      value={values.description}
                       className="w-full h-12 px-3 py-2 text-sm leading-tight text-gray-700 border 
                               rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
                       
@@ -77,7 +77,7 @@ console.log(values);
                       id="categoria"
                       type="text"
                       onChange={handleChange}
-                      value={values.categoria}
+                      value={values.category}
                       className="w-full h-12 px-3 py-2 text-sm leading-tight text-gray-700 border 
                               rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
                       
@@ -91,7 +91,7 @@ console.log(values);
                     id="precio"
                     type="text"
                     onChange={handleChange}
-                    value={values.precio}
+                    value={values.price}
                       className="w-full h-12 px-3 py-2 text-sm leading-tight text-gray-700 border 
                               rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
                     />
@@ -114,3 +114,4 @@ console.log(values);
     </>
   )
 }
+Promotions.layout = "L2";

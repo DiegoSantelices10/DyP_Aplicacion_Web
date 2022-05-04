@@ -37,6 +37,7 @@ return (
   </div >
 );
 }
+Login.layout = "L1";
 
 export const getServerSideProps = async (context) => {
   const session = await getSession(context);

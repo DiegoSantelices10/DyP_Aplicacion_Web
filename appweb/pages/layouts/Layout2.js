@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Navbar from './navbar'
+import Navbar from '../../components/navbar'
 
 
-const Container = ({ children }) => (
+const Layout2 = ({ children }) => (
   <div className="h-screen">
     <Head>
       <title>D&amp;P</title>
@@ -12,4 +12,4 @@ const Container = ({ children }) => (
   </div>
 );
 
-export default Container;
+export default Layout2;

@@ -1,19 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
-import { IconContext } from 'react-icons'
-import { BiHome, BiCog, BiDollarCircle, BiShoppingBag, BiGift, BiCoffeeTogo } from "react-icons/bi";
 
 
-export default function menuacceso() {
+export default function accessmenu() {
   return (
     <div className="flex justify-center w-11/12 mx-auto h-auto my-10 gap-4 ">
 
-      <Link href="../admin/home">
+      <Link href="../">
         <button className="bg-white rounded-full shadow-md   h-auto w-full">
           <div className="mt-1 p-2">
-            <IconContext.Provider value={{ color: '#075985', size: '30px' }}>
-              <BiHome className="mx-auto" />
-            </IconContext.Provider>
+         
             <p className="text-lg font-poppins font-medium text-zinc-800">Home</p>
           </div>
         </button>
@@ -22,12 +18,10 @@ export default function menuacceso() {
 
 
 
-      <Link href="../productos/productos">
+      <Link href="../products">
         <button className="bg-white rounded-full  shadow-md  h-auto w-full">
           <div className="mt-1 p-2">
-            <IconContext.Provider value={{ color: '#075985', size: '30px' }}>
-              <BiCoffeeTogo className="mx-auto" />
-            </IconContext.Provider>
+          
             <p className="text-lg font-poppins font-medium text-zinc-800">Productos</p>
           </div>
         </button>
@@ -35,34 +29,28 @@ export default function menuacceso() {
 
       
 
-      <Link href="../ventas/ventas">
+      <Link href="../sales">
         <button className="bg-white rounded-full  shadow-md  h-auto  w-full">
           <div className="mt-1 p-2" >
-            <IconContext.Provider value={{ color: '#075985', size: '30px' }}>
-              <BiDollarCircle className="mx-auto" />
-            </IconContext.Provider>
+        
             <p className="text-lg font-poppins font-medium text-zinc-800">Ventas</p>
           </div>
         </button>
       </Link>
 
-      <Link href="../promociones/promociones">
+      <Link href="../promotions">
         <button className="bg-white rounded-full  shadow-md   h-auto  w-full">
           <div className="mt-1 p-2" >
-            <IconContext.Provider value={{ color: '#075985', size: '30px' }}>
-              <BiGift className="mx-auto" />
-            </IconContext.Provider>
+            
             <p className="text-lg font-poppins font-medium text-zinc-800">Promociones</p>
           </div>
         </button>
       </Link>
 
-      <Link href="../ajustes/ajustes">
+      <Link href="../settings">
         <button className="bg-white rounded-full  shadow-md  h-auto  w-full ">
           <div className="mt-1 p-2">
-            <IconContext.Provider value={{ color: '#075985', size: '30px' }}>
-              <BiCog className="mx-auto" />
-            </IconContext.Provider>
+            
             <p className="text-lg font-poppins font-medium text-zinc-800">Ajustes</p>
           </div>
         </button>

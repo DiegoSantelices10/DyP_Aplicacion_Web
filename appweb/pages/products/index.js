@@ -1,16 +1,16 @@
-import Menuacceso from '../../components/menuacceso'
+import AccessMenu from '../../components/accessMenu'
 import Button from '../../components/button'
 import { useFormik } from 'formik'
 
 
-export default function Productos() {
+export default function Products() {
 
   const { handleSubmit, handleChange, values } = useFormik({
     initialValues: {
-      producto: "",
-      descripcion: "",
-      categoria: "",
-      precio: "",
+      product: "",
+      description: "",
+      category: "",
+      price: "",
     },
     onSubmit: async function (values) {
 
@@ -21,7 +21,7 @@ export default function Productos() {
   console.log(values);
   return (
     <>
-      <Menuacceso />
+      <AccessMenu />
       <div className="h-screen fixed w-full">
         <div className="w-11/12 h-auto text-center flex justify-center py-10 mx-auto">
           <div className="w-2/6 h-full grid gap-4 grid-cols-1">
@@ -59,7 +59,7 @@ export default function Productos() {
                   name="producto"
                   type="text"
                   onChange={handleChange}
-                  value={values.producto}
+                  value={values.product}
                   className="w-full h-12 px-3 py-2 text-sm leading-tight text-gray-700 border 
                               rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
                 />
@@ -76,7 +76,7 @@ export default function Productos() {
                   name="descripcion"
                   type="text"
                   onChange={handleChange}
-                  value={values.descripcion}
+                  value={values.description}
                   className="w-full h-12 px-3 py-2 text-sm leading-tight text-gray-700 border 
                               rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
                 />
@@ -96,7 +96,7 @@ export default function Productos() {
                   name="categoria"
                   type="text"
                   onChange={handleChange}
-                  value={values.categoria}
+                  value={values.category}
                   className="w-full h-12 px-3 py-2 text-sm leading-tight text-gray-700 border 
                               rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
                 />
@@ -114,7 +114,7 @@ export default function Productos() {
                   name="precio"
                   type="text"
                   onChange={handleChange}
-                  value={values.precio}
+                  value={values.price}
                   className="w-full h-12 px-3 py-2 text-sm leading-tight text-gray-700 border 
                               rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
                 />
@@ -137,3 +137,4 @@ export default function Productos() {
     </>
   )
 }
+Products.layout = "L2";
