@@ -10,8 +10,8 @@ export default function Login() {
       <div className="h-full w-4/5 flex items-center justify-between mx-auto">
         <div className="text-white">
           <Image src="/images/liebreblack.png" width={95} height={80} />
-          <h1 className=" text-3xl font-bold">¡Registra tu negocio!</h1>
-          <p className=" text-md font-medium w-2/3">Registrate en simples pasos y empieza a hacer crecer tu negocio junto a nosotros.</p>
+          <h1 className=" text-3xl font-bold">¡Registrá tu negocio!</h1>
+          <p className=" text-md font-medium w-2/3">Registrate en simples pasos y empezá a hacer crecer tu negocio junto a nosotros.</p>
 
         </div>
         <div className="grid content-center rounded-md shadow-lg bg-white w-full 
@@ -20,12 +20,12 @@ export default function Login() {
             <h1 className="font-bold"> ¡Bienvenido, ingresá a tu cuenta!</h1>
           </div>
           <Form />
-          <div class="flex items-center my-6 before:flex-1 
+          <div className="flex items-center my-6 before:flex-1 
                     before:border-t before:border-gray-300 
                     before:mt-0.5 after:flex-1 after:border-t 
                     after:border-gray-300 after:mt-0.5"
           >
-            <p className="text-center text-xs text-slate-400 mx-4 mb-0">O Registrate con</p>
+            <p className="text-center text-xs text-slate-400 mx-4 mb-0">o Registrate con</p>
           </div>
 
           <div className="text-center mx-auto ">

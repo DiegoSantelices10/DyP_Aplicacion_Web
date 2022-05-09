@@ -16,3 +16,5 @@ export default function SignUp() {
             </div>
     )
 }
+
+SignUp.layout = "L1"
