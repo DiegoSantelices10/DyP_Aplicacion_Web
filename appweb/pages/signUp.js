@@ -1,20 +1,50 @@
 import Button from '../components/button'
-import Form from '../components/form'
+import {useRouter} from 'next/router'
 
 
 export default function SignUp() {
-    return (
-            <div className="h-screen bg-gradient-to-r from-cyan-500 to-blue-500 ">
-                <div className="flex w-full h-full justify-center items-center">
-                    <div className="w-full h-full sm:h-3/4  xl:w-3/4 lg:w-11/12 md:w-11/12  flex justify-center">
-                        <div className="w-full xl:w-11/12 lg:w-1/2 md:w-3/4  bg-white p-5 rounded-none lg:rounded-l-none lg:rounded-r-lg ">
-                            <h3 className="pt-4 text-2xl text-center">Datos del comercio</h3>
-                            <Form />
-                        </div>
-                    </div>
-                </div>
-            </div>
-    )
+const router = new useRouter();
+
+return (
+    <div ClassName="w-1/2">
+    <form className="font-poppins">
+      <div className="mb-4">
+        <label className="block mb-2 text-sm  text-slate-400" htmlFor="username">
+          Usuario 
+        </label>
+        <input
+          className="w-full h-12 px-3 py-2 text-sm leading-tight text-gray-700 border 
+          rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
+          id="username"
+          type="text"
+          placeholder="Correo electrónico"
+        />
+      </div>
+      <div className="mb-1">
+        <label className="block mb-2 text-sm  text-slate-400" htmlFor="password">
+          Contraseña lalala 
+        </label>
+        <input
+          className="w-full h-12 px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border 
+          rounded-md shadow appearance-none focus:outline-none focus:shadow-outline"
+          id="password"
+          type="password"
+          placeholder="******************"
+        />
+      </div>
+      <button className="mx-auto w-full py-2 h-12 mt-5
+                                    rounded-md  text-sm 
+                                    border text-white bg-gradient-to-r 
+                                    from-cyan-500 to-indigo-500 "
+                                    onClick={() => router.push('../admin/')}
+                type="button">
+Iniciar sesion
+              </button>
+
+    </form>
+    </div>
+  )
 }
+ 
 
 SignUp.layout = "L1"
