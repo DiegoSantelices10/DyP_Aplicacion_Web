@@ -14,7 +14,7 @@ export default function SignUp() {
           </div>
 
         
-          <form className="font-poppins">
+          <form className="font-poppins grid grid-cols-2 gap-4">
             <div className="mb-4">
               <label className="block mb-2 text-sm  text-slate-400" htmlFor="nombre">
                 Nombre
@@ -63,7 +63,7 @@ export default function SignUp() {
                 placeholder=""
               />
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="mb-4">
             <label className="block mb-2 text-sm  text-slate-400" htmlFor="nomblocal">
                 Nombre del local
               </label>
