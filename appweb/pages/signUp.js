@@ -4,18 +4,18 @@ import Image from 'next/image'
 export default function SignUp() {
   return (
     <div className="h-screen bg-gradient-to-r from-cyan-500 to-indigo-500 ">
-      <div className="h-full w-4/5 flex items-center justify-between mx-auto">
+      <div className="h-full w-4/5 flex items-center justify-center mx-auto">
 
       
         <div className="grid content-center rounded-md shadow-lg bg-white w-full 
-          h-full p-8 lg:h-auto md:w-11/12 md:h-auto">
+          h-full p-8 lg:w-1/2 lg:h-auto md:w-11/12 md:h-auto">
           <div className="w-auto mx-auto py-3">
             <h1 className="font-bold"> ¡Registrá tu comercio!</h1>
           </div>
 
         
           <form className="font-poppins grid grid-cols-2 gap-4">
-            <div className="mb-4">
+            <div>
               <label className="block mb-2 text-sm  text-slate-400" htmlFor="nombre">
                 Nombre
               </label>
