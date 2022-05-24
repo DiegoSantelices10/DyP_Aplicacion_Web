@@ -10,17 +10,13 @@ export default function Login() {
       <div className="h-full w-4/5 flex items-center justify-between mx-auto">
 
 
-        <div className="w-2/5 text-center text-white">
+       
+      <div className="w-2/5 text-center text-white">
           <div className="mx-auto">
-          <Image src="/images/liebreblack.png" width={95} height={80} />
-          <h1 className=" text-3xl font-bold">¡Registrá tu negocio!</h1>
-          <p className=" text-md font-medium">Registrate en simples pasos y empezá a hacer crecer tu negocio junto a nosotros.</p>
- </div>
-        <div className="text-white">
-          <Image src="/images/liebreblack.png" width={95} height={80} />
+            <Image src="/images/liebre.png" width={95} height={80} />
+          </div>
           <h1 className=" text-3xl font-bold">¡Registra tu negocio!</h1>
-          <p className=" text-md font-medium w-2/3">Registrate en simples pasos y empieza a hacer crecer tu negocio junto a nosotros.</p>
-
+          <p className="text-md font-medium">Registrate en simples pasos y empieza a hacer crecer tu negocio junto a nosotros.</p>
         </div>
 
         <div className="grid content-center rounded-md shadow-lg bg-white w-full 
@@ -40,10 +36,16 @@ export default function Login() {
             <button onClick={() => signIn("google")} className="flex items-center" type="button">
               <Image src="/images/LogoGoogle.png" width={30} height={30} />
             </button>
+            
           </div>
+
+        </div>
+
+
+
         </div>
       </div>
-    </div >
+   
   );
 }
 Login.layout = "L1";

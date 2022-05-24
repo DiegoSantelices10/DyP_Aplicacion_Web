@@ -32,15 +32,19 @@ const router = new useRouter();
           placeholder="******************"
         />
       </div>
-      <button className="mx-auto w-full py-2 h-12 mt-5
-                                    rounded-md  text-sm 
+        <div className="flex">
+              <button className="mx-auto w-full py-2 h-12 mt-5 text-sm hover:text-slate-400"
+                      onClick={() => router.push('../signUp')}
+                      type="button">Crea tu cuenta</button>
+              <button className="mx-auto w-full py-2 h-12 mt-5
+                                    rounded-xl  text-sm 
                                     border text-white bg-gradient-to-r 
                                     from-cyan-500 to-indigo-500 "
                                     onClick={() => router.push('../admin/')}
                 type="button">
-Iniciar sesion
+                  Iniciar sesion
               </button>
-
+        </div>
     </form>
     </div>
   )
