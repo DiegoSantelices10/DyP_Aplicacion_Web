@@ -3,7 +3,6 @@ import Mydropdown from './mydropdown'
 import Link from 'next/link'
 import Image from 'next/image'
 import { signOut, getSession } from 'next-auth/react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function navbar() {  
   return (
