@@ -4,6 +4,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { signOut, getSession } from 'next-auth/react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons' 
+
+
 export default function navbar() {  
   return (
     <nav className="flex justify-between bg-white border-b border-b-gray-500 px-2 sm:px-4 h-14 font-roboto ">
@@ -19,11 +23,11 @@ export default function navbar() {
         </div>
 
         <div className="hidden md:block md:w-auto pl-14 my-auto" id="mobile-menu">
-            <div>
-              <a onClick={() => signOut()}>
-cerrar sesion
-              </a>            
-            </div>
+              <Link href="../" >
+                <a onClick={() => signOut()}>
+                <FontAwesomeIcon icon={faArrowRightToBracket} size="xl" />
+              </a>
+              </Link>          
         </div>
     </nav>
   )
