@@ -10,7 +10,7 @@ const layouts = {
 };
 
 function MyApp({ Component, pageProps: {session, ...pageProps} }) {
-  const Layout = layouts[Component.layout] || ((children) => <>{children}</>);
+  const Layout = layouts[Component.layout] || ((children) => <div>{children}</div>);
   
   return (
     <Layout>

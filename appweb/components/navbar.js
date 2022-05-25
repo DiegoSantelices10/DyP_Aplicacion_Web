@@ -3,12 +3,9 @@ import Mydropdown from './mydropdown'
 import Link from 'next/link'
 import Image from 'next/image'
 import { signOut, getSession } from 'next-auth/react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { 
-faCode, 
-faArrowRightToBracket,
-faBeerMugEmpty,
-} from '@fortawesome/free-solid-svg-icons' // <-- import styles to be used
+import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons' 
 
 
 export default function navbar() {  
