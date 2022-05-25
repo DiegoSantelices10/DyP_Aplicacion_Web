@@ -4,6 +4,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { signOut, getSession } from 'next-auth/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { 
+faCode, 
+faArrowRightToBracket,
+faBeerMugEmpty,
+} from '@fortawesome/free-solid-svg-icons' // <-- import styles to be used
+
 
 export default function navbar() {  
   return (
@@ -20,11 +26,11 @@ export default function navbar() {
         </div>
 
         <div className="hidden md:block md:w-auto pl-14 my-auto" id="mobile-menu">
-            <div>
-              <a onClick={() => signOut()}>
-cerrar sesion
-              </a>            
-            </div>
+              <Link href="../" >
+                <a onClick={() => signOut()}>
+                <FontAwesomeIcon icon={faArrowRightToBracket} size="xl" />
+              </a>
+              </Link>          
         </div>
     </nav>
   )
