@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { signOut, getSession } from 'next-auth/react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons' 
 
 
