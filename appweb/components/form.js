@@ -40,7 +40,7 @@ const router = new useRouter();
                                     rounded-xl  text-sm 
                                     border text-white bg-gradient-to-r 
                                     from-cyan-500 to-indigo-500 "
-                                    onClick={() => router.push('../admin/')}
+                                    onClick={() => router.push('../')}
                 type="button">
                   Iniciar sesion
               </button>
