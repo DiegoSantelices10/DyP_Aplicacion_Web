@@ -35,12 +35,11 @@ export default function Products() {
             type="button">Buscar
           </button>
         </form>
-        <div className="flex w-1/2 items-center justify-end">
+        <div className="flex w-1/2 items-center justify-end space-x-7">
           <h1 className="text-xl font-poppins font-extrabold text-center
-                       text-zinc-800 w-full ">¡Ingresa un producto nuevo!</h1>
-
+                       text-zinc-800 w-auto ">¡Ingresa un producto nuevo!</h1>
           <Link href="/products/create">
-          <button className="w-64 h-12 col-start-2
+          <button className="w-48 h-12 col-start-2
                              rounded-2xl  text-sm 
                              border text-white bg-gradient-to-r 
                            from-cyan-500 to-indigo-500 "
