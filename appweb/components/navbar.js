@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { signOut, getSession } from 'next-auth/react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons' 
+import {  faAppleWhole } from '@fortawesome/free-solid-svg-icons' 
 
 
 export default function navbar() {  
@@ -25,7 +25,7 @@ export default function navbar() {
         <div className="hidden md:block md:w-auto pl-14 my-auto" id="mobile-menu">
               <Link href="../" >
                 <a onClick={() => signOut()}>
-                <FontAwesomeIcon icon={faArrowRightToBracket} size="xl" />
+                <FontAwesomeIcon className= "fuchsia-900" icon={faAppleWhole} size="xl" /> 
               </a>
               </Link>          
         </div>
