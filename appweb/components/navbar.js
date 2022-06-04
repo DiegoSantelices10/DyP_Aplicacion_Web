@@ -10,7 +10,7 @@ import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons'
 
 export default function navbar() {  
   return (
-    <nav className="flex justify-between bg-white border-b border-b-gray-500 px-2 sm:px-4 h-14 font-roboto ">
+    <nav className="flex sticky top-0 z-50  justify-between bg-white shadow-md shadow-slate-300/50 w-full  sm:px-4 p-3 font-roboto ">
         <div className="my-auto">
             <Mydropdown/>
         </div>

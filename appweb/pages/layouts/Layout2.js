@@ -3,12 +3,12 @@ import Navbar from '../../components/navbar'
 
 
 const Layout2 = ({ children }) => (
-  <div className="h-screen">
+  <div className="h-screen w-full">
     <Head>
       <title>D&amp;P</title>
     </Head>
       <Navbar />
-      <main className="h-screen fixed bg-slate-50 font-poppins w-full">{children}</main>
+      <main className="relative   font-poppins w-full">{children}</main>
   </div>
 );
 
