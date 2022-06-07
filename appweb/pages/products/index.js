@@ -2,7 +2,10 @@ import AccessMenu from '../../components/accessmenu'
 import Button from '../../components/button'
 import { useFormik } from 'formik'
 import Link from 'next/link';
+import {useRouter} from 'next/router'
 export default function Products() {
+
+const router = useRouter()
 
   const { handleSubmit, handleChange, values } = useFormik({
     initialValues: {
@@ -39,14 +42,13 @@ export default function Products() {
           <h1 className="text-xl font-poppins font-extrabold text-center
                        text-zinc-800 w-full ">¡Ingresa un producto nuevo!</h1>
 
-          <Link href="/products/create">
           <button className="w-64 h-12 col-start-2
                              rounded-2xl  text-sm 
                              border text-white bg-gradient-to-r 
                            from-cyan-500 to-indigo-500 "
-            type="button">Producto Nuevo
+                  type="button"
+                  onClick={() => { router.push("/products/create")}}>Producto Nuevo
           </button>
-          </Link>
         </div>
 
 
