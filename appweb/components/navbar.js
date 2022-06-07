@@ -28,7 +28,7 @@ export default function navbar() {
                 <FontAwesomeIcon className= "fuchsia-900" icon={faArrowCircleRight} size="xl" /> 
               </a>
               </Link>          
-        </div>
+            </div>
     </nav>
   )
 }
