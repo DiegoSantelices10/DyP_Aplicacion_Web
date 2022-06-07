@@ -5,12 +5,12 @@ import Image from 'next/image'
 import { signOut, getSession } from 'next-auth/react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons' 
+import {  faAppleWhole } from '@fortawesome/free-solid-svg-icons' 
 
 
 export default function navbar() {  
   return (
-    <nav className="flex justify-between bg-white border-b border-b-gray-500 px-2 sm:px-4 h-14 font-roboto ">
+    <nav className="flex sticky top-0 z-50  justify-between bg-white shadow-md shadow-slate-300/50 w-full  sm:px-4 p-3 font-roboto ">
         <div className="my-auto">
             <Mydropdown/>
         </div>
@@ -25,7 +25,7 @@ export default function navbar() {
         <div className="hidden md:block md:w-auto pl-14 my-auto" id="mobile-menu">
               <Link href="../" >
                 <a onClick={() => signOut()}>
-                <FontAwesomeIcon icon={faArrowRightToBracket} size="xl" />
+                <FontAwesomeIcon className= "fuchsia-900" icon={faAppleWhole} size="xl" /> 
               </a>
               </Link>          
             </div>

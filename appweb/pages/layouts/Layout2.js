@@ -3,7 +3,7 @@ import Navbar from '../../components/navbar'
 
 
 const Layout2 = ({ children }) => (
-  <div className="h-screen">
+  <div className="h-screen w-full">
     <Head>
       <title>D&amp;P</title>
     </Head>
