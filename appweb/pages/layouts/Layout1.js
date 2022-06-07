@@ -6,7 +6,7 @@ const Layout1 = ({ children }) => (
     <Head>
       <title>D&amp;P</title>
     </Head>
-      <main className="h-screen fixed bg-slate-50 font-poppins w-full">{children}</main>
+      <main className="h-screen fixed bg-white font-poppins w-full">{children}</main>
   </div>
 );
 
