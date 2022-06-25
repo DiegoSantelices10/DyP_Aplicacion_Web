@@ -24,7 +24,7 @@ export default function Login() {
           <div className="w-auto mx-auto py-3">
             <h1 className="font-bold"> ¡Bienvenido, ingresá a tu cuenta!</h1>
           </div>
-          <Form />
+          <Form mensaje ="hola" />
           <div className="flex items-center my-6 before:flex-1 
                     before:border-t before:border-gray-300 
                     before:mt-0.5 after:flex-1 after:border-t 
@@ -34,7 +34,7 @@ export default function Login() {
           </div>
           <div className="text-center mx-auto ">
             <button onClick={() => signIn("google")} className="flex items-center" type="button">
-              <Image src="/images/LogoGoogle.png" width={30} height={30} />
+              <Image src="/images/logogoogle.png" width={30} height={30} />
             </button>
             
           </div>

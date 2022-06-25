@@ -2,7 +2,7 @@
 import {useRouter} from 'next/router'
 
 
-export default function Form() {
+export default function Form({mensaje}) {
 const router = new useRouter();
 
   return (
@@ -22,7 +22,7 @@ const router = new useRouter();
       </div>
       <div className="mb-1">
         <label className="block mb-2 text-sm  text-slate-400" htmlFor="password">
-          Contraseña 
+          Contraseña {mensaje}
         </label>
         <input
           className="w-full h-12 px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border 

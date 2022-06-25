@@ -1,5 +1,5 @@
 import React from 'react'
-import AccessMenu from '../../components/accessmenu'
+import AccessMenu from 'components/accessmenu'
 
 export default function Sales() {
   return (

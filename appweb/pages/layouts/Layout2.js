@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from '../../components/navbar'
+import Navbar from 'components/navbar'
 
 
 const Layout2 = ({ children }) => (
@@ -8,7 +8,7 @@ const Layout2 = ({ children }) => (
       <title>D&amp;P</title>
     </Head>
       <Navbar />
-      <main className="h-screen fixed bg-white font-poppins w-full">{children}</main>
+      <main className="h-screen fixed bg-slate-50 font-poppins w-full">{children}</main>
   </div>
 );
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import AccessMenu from '../../components/accessmenu'
-import Button from '../../components/button'
+import AccessMenu from 'components/accessmenu'
+import Button from 'components/button'
 import { useFormik} from 'formik'
 
 export default function Promotions() {

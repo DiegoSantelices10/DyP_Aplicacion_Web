@@ -1,5 +1,5 @@
-import AccessMenu from '../../components/accessmenu'
-import Button from '../../components/button'
+import AccessMenu from 'components/accessmenu'
+import Button from 'components/button'
 import { useFormik } from 'formik'
 import Link from 'next/link';
 import {useRouter} from 'next/router'
@@ -56,72 +56,39 @@ const router = useRouter()
       </div>
       <div className="w-11/12 mx-auto grid  grid-cols-2 justify-items-center gap-x-3 gap-y-3">
 
-        <div className="w-full h-32 rounded shadow bg-white p-2  flex justify-between">
-          <div className="w-28 h-28 bg-slate-500  ">
-
-          </div>
-          <div className="w-3/5 h-28 shadow-md ">
-
-          </div>
-          <div className="w-28 h-28 shadow-md">
-
-          </div>
+        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
+            <div className="w-24 h-24 bg-white shadow-md "></div>
+            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
+            <div className="w-24 h-24 bg-white  shadow-md"></div>
         </div>
-        <div className="w-full h-32 rounded shadow bg-white p-2  flex justify-between">
-          <div className="w-28 h-28 bg-slate-500  ">
-
-          </div>
-          <div className="w-3/5 h-28 shadow-md  ">
-
-          </div>
-          <div className="w-28 h-28 shadow-md ">
-
-          </div>
+        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
+            <div className="w-24 h-24 bg-white shadow-md "></div>
+            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
+            <div className="w-24 h-24 bg-white  shadow-md"></div>
         </div>
-        <div className="w-full h-32 rounded shadow bg-white p-2  flex justify-between">
-          <div className="w-28 h-28 bg-slate-500  ">
-
-          </div>
-          <div className="w-3/5 h-28 shadow-md ">
-
-          </div>
-          <div className="w-28 h-28 shadow-md">
-
-          </div>
+        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
+            <div className="w-24 h-24 bg-white shadow-md "></div>
+            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
+            <div className="w-24 h-24 bg-white  shadow-md"></div>
         </div>
-        <div className="w-full h-32 rounded shadow bg-white p-2  flex justify-between">
-          <div className="w-28 h-28 bg-slate-500  ">
-
-          </div>
-          <div className="w-3/5 h-28 shadow-md  ">
-
-          </div>
-          <div className="w-28 h-28 shadow-md ">
-
-          </div>
+        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
+            <div className="w-24 h-24 bg-white shadow-md "></div>
+            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
+            <div className="w-24 h-24 bg-white  shadow-md"></div>
         </div>
-        <div className="w-full h-32 rounded shadow bg-white p-2  flex justify-between">
-          <div className="w-28 h-28 bg-slate-500  ">
-
-          </div>
-          <div className="w-3/5 h-28 shadow-md ">
-
-          </div>
-          <div className="w-28 h-28 shadow-md">
-
-          </div>
+        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
+            <div className="w-24 h-24 bg-white shadow-md "></div>
+            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
+            <div className="w-24 h-24 bg-white  shadow-md"></div>
         </div>
-        <div className="w-full h-32 rounded shadow bg-white p-2  flex justify-between">
-          <div className="w-28 h-28 bg-slate-500  ">
-
-          </div>
-          <div className="w-3/5 h-28 shadow-md  ">
-
-          </div>
-          <div className="w-28 h-28 shadow-md ">
-
-          </div>
+        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
+            <div className="w-24 h-24 bg-white shadow-md "></div>
+            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
+            <div className="w-24 h-24 bg-white  shadow-md"></div>
         </div>
+      
+
+
 
 
       </div>
