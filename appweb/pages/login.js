@@ -34,7 +34,7 @@ export default function Login() {
           </div>
           <div className="text-center mx-auto ">
             <button onClick={() => signIn("google")} className="flex items-center" type="button">
-              <Image src="/images/logogoogle.png" width={30} height={30} />
+              <Image src="/images/logogoogle.png" width={35} height={35} />
             </button>
             
           </div>

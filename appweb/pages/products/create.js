@@ -21,8 +21,7 @@ export default function Create() {
     return (
         <>
             <AccessMenu />
-            <form className="w-3/5 h-auto px-10 mx-auto mt-5"
-                onSubmit={handleSubmit}>
+            <form className="w-3/5 h-auto px-10 mx-auto mt-5" onSubmit={handleSubmit}>
                 <h1 className=" text-3xl font-poppins font-extrabold text-zinc-800 pb-5">¡Ingresa un producto nuevo!</h1>
                 <div className="grid grid-cols-2 mt-4 justify-items-end gap-4">
                     <div className="w-full mx-auto">
