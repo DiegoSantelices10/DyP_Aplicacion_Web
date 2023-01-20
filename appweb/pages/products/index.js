@@ -1,5 +1,4 @@
-import AccessMenu from 'components/accessmenu'
-import Button from 'components/button'
+import AccessMenu from '/components/accessmenu'
 import { useFormik } from 'formik'
 import Link from 'next/link';
 import {useRouter} from 'next/router'
