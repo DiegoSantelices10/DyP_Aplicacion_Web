@@ -25,8 +25,8 @@ export default function navbar() {
         <div className="hidden md:block md:w-auto pl-14 my-auto" id="mobile-menu">
               <Link href="../" >
                 <a onClick={() => signOut()}>
-                <FontAwesomeIcon className= "fuchsia-900" icon={faArrowCircleRight} size="xl" /> 
-              </a>
+                  <FontAwesomeIcon className= "fuchsia-900" icon={faArrowCircleRight} size="xl" /> 
+                </a>
               </Link>          
             </div>
     </nav>
