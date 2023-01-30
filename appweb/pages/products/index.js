@@ -16,7 +16,6 @@ const router = useRouter()
   });
   return (
     <>
-      <AccessMenu />
       <div className="flex w-11/12 mx-auto items-center gap-x-4 justify-between py-4">
         <form onSubmit={handleSubmit} className="flex w-1/2 items-center gap-x-2">
           <div className="w-2/3 mx-auto">

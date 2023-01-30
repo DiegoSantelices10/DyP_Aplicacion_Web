@@ -1,14 +1,7 @@
 import React from "react";
 import AccessMenu from "/components/accessmenu";
 
-
 export default function Settings() {
-  return (
-    <div>
-      <AccessMenu />
-
-     
-    </div>
-  );
+  return <div></div>;
 }
-Settings.layout = "L2"
+Settings.layout = "L2";

@@ -1,26 +1,19 @@
-import {connect, connection} from 'mongoose'
+import { connect, connection } from "mongoose";
 
-
+const MONGODB_URI = process.env.MONGODB_URI;
 
 const conn = {
-    isConnected: false
-}
+  isConnected: false,
+};
 
-export async function dbConnect(){
-    if(conn.isConnected) return
+const dbConnect = async () => {
+  if (conn.isConnected) return;
 
-    const db = await connect(process.env.MONGODB_URL)
+  const db = await connect(MONGODB_URI);
 
-        conn.isConnected = db.connections[0].readyState
+  conn.isConnected = db.connections[0].readyState;
 
-        console.log(db.connection.db.databaseName);
-}
+  console.log(db.connection.db.databaseName);
+};
 
-
-connection.on("connected", () => {
-console.log("mongodb is connected");
-})
-
-connection.on("error", (err) => {
-    console.log(err);
-})
+export default dbConnect;
