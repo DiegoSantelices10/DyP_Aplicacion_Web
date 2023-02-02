@@ -2,6 +2,37 @@ import AccessMenu from '/components/accessmenu'
 import { useFormik } from 'formik'
 import Link from 'next/link';
 import {useRouter} from 'next/router'
+
+const productos = [{
+  id: 1,
+  name:'brownie',
+  description: 'choco',
+  price: 400,
+  category: 'confiteria',
+  img: 'image/liebre.png'
+
+},
+
+{
+  id: 2,
+  name:'brownie',
+  description: 'choco',
+  price: 400,
+  category: 'confiteria',
+  img: 'image/liebre.png'
+
+},
+
+{
+  id: 3,
+  name:'brownie',
+  description: 'choco',
+  price: 400,
+  category: 'confiteria',
+  img: 'image/liebre.png'
+
+}]
+
 export default function Products() {
 
 const router = useRouter()
@@ -53,38 +84,18 @@ const router = useRouter()
 
       </div>
       <div className="w-11/12 mx-auto grid  grid-cols-2 justify-items-center gap-x-3 gap-y-3">
+        {productos.map((producto)=>(
+          <div key={producto.id} className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
+          <div className="w-24 h-24 bg-white shadow-md ">{producto.name}</div>
+          <div className="w-3/5 h-24 bg-white  shadow-md "> 
+           
+          
+          </div>
+          <div className="w-24 h-24 bg-white  shadow-md"></div>
+      </div>
+        ))}
 
-        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
-            <div className="w-24 h-24 bg-white shadow-md "></div>
-            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
-            <div className="w-24 h-24 bg-white  shadow-md"></div>
-        </div>
-        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
-            <div className="w-24 h-24 bg-white shadow-md "></div>
-            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
-            <div className="w-24 h-24 bg-white  shadow-md"></div>
-        </div>
-        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
-            <div className="w-24 h-24 bg-white shadow-md "></div>
-            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
-            <div className="w-24 h-24 bg-white  shadow-md"></div>
-        </div>
-        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
-            <div className="w-24 h-24 bg-white shadow-md "></div>
-            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
-            <div className="w-24 h-24 bg-white  shadow-md"></div>
-        </div>
-        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
-            <div className="w-24 h-24 bg-white shadow-md "></div>
-            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
-            <div className="w-24 h-24 bg-white  shadow-md"></div>
-        </div>
-        <div className="w-full h-28 rounded shadow bg-slate-50 p-2  flex justify-between">
-            <div className="w-24 h-24 bg-white shadow-md "></div>
-            <div className="w-3/5 h-24 bg-white  shadow-md "></div>
-            <div className="w-24 h-24 bg-white  shadow-md"></div>
-        </div>
-      
+        
 
 
 

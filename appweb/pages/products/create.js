@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import React from "react";
 import { Formik, Form } from "formik";
 import axios from "axios";
@@ -15,11 +16,12 @@ export default function Create() {
           image: "",
         }}
         onSubmit={(values) => {
-          axios
-            .post("http://localhost:3000/api/products", values)
-            .then((res) => {
-              console.log(res);
-            });
+           axios
+             .post("http://localhost:3000/api/products", values)
+             .then((res) => {
+               Swal.fire({icon:"success", title: "Producto cargado con exito"}) 
+               console.log(res);
+             });
         }}
       >
         {({
